@@ -138,7 +138,7 @@ class ofxDatGuiTheme{
     */
     
         struct {
-            int width = 2.0f;
+            int width = 5.0f;
             bool visible = true;
             ofColor label = ofColor::fromHex(0xEEEEEE);
             ofColor button = ofColor::fromHex(0xFFD00B);
@@ -171,8 +171,8 @@ class ofxDatGuiTheme{
         
         // general rules that are shared by all components //
             float width = 270.0f;
-            float height = 26.0f;
-            float padding = 2.0f;
+            float height = 42.0f;
+            float padding = 8.0f;
             float vMargin = 1.0f; // vertical spacing between gui components //
             float iconSize = 10.0f;
             float labelWidth = 95.0f;
@@ -218,8 +218,8 @@ class ofxDatGuiTheme{
         static string AssetPath;
     
         struct {
-            int size = 6;
-            string file = AssetPath + "ofxbraitsch/fonts/Verdana.ttf";
+            int size = 11;
+            string file = AssetPath + "ofxbraitsch/fonts/OpenSans-Regular.ttf";
             shared_ptr<ofxSmartFont> ptr;
         } font;
     
