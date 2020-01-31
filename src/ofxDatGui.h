@@ -39,6 +39,8 @@ class ofxDatGui : public ofxDatGuiInteractiveObject
         void expand();
         void toggle();
         void collapse();
+
+        void hideChildren();
     
         void setWidth(int width, float labelWidth = 0.35f);
         void setVisible(bool visible);
@@ -136,7 +138,7 @@ class ofxDatGui : public ofxDatGuiInteractiveObject
         void moveGui(ofPoint pt);
         bool hitTest(ofPoint pt);
         void attachItem(ofxDatGuiComponent* item);
-    
+        
         void onDraw(ofEventArgs &e);
         void onUpdate(ofEventArgs &e);
         void onWindowResized(ofResizeEventArgs &e);

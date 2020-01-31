@@ -427,6 +427,13 @@ void ofxDatGui::attachItem(ofxDatGuiComponent* item)
     layoutGui();
 }
 
+void ofxDatGui::hideChildren()
+{
+    for (int i = 0; i < items.size(); i++) {
+        items[i]->setVisible(false);
+    }
+}
+
 /*
     component retrieval methods
 */
