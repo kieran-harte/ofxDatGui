@@ -277,6 +277,7 @@ class ofxDatGuiFolder : public ofxDatGuiGroup {
 
         ofxDatGuiButton* addButton(string label)
         {
+            label = "       " + label;
             ofxDatGuiButton* button = new ofxDatGuiButton(label);
             button->setStripeColor(mStyle.stripe.color);
             button->onButtonEvent(this, &ofxDatGuiFolder::dispatchButtonEvent);
